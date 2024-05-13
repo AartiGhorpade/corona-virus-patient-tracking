@@ -1,0 +1,122 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.card-section .card-one,
+.card-two,
+.card-three,
+.card-four,
+.card-five,
+.card-six {
+    width: 30%;
+    background-color: aquamarine;
+    margin: 10px;
+    padding: 9px;
+}
+
+.data-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+}
+
+.main-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    display: block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    background-size: 14px;
+}
+
+.input-box {
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    font-weight: 700;
+}
+
+input::placeholder {
+    font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width:991px){
+    .container {
+        width: 750px;
+    }
+    .card-section {
+        justify-content: center;
+    }
+    .input-box {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199px){
+    .container {
+        width: 970px;
+    }
+    .card-section {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 320px) and (max-width:767px){
+
+    .card-section .card-one,
+    .card-two,
+    .card-three,
+    .card-four,
+    .card-five,
+    .card-six {
+        width: 100%;
+    }
+    .card-section {
+        justify-content: center;
+    }
+    .input-box {
+        width: 80%;
+    }
+}
+
